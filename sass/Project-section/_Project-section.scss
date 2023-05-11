@@ -1,10 +1,14 @@
 .projects-section {
     height: 330vh;
+    @media screen and (min-width: map-get($breakepoints, $desktop)) {
+        height: 350vh;
+    }
     &__info {
         height: 10%;
         text-align: center;
         @media screen and (min-width: map-get($breakepoints, $smartphone)) {
             padding: 30px 30px;
+            height: 15%;
         }
         &__name {
             font-size: $very-big-font-size;
@@ -16,24 +20,54 @@
             border: none;
             border-radius: 15px;
             margin: 2vh auto;
-            @media screen and (min-width: map-get($breakepoints, $smartphone)) {
-                height: 2%;
-            }
             @media screen and (min-width: map-get($breakepoints, $large-smartphone)) {
                 width: 20%;
+            }
+            @media screen and (min-width: map-get($breakepoints, $large-smartphone)) {
+                width: 15%;
+            }
+            @media screen and (min-width: map-get($breakepoints, $tablet)) {
+                width: 10%;
+            }
+            @media screen and (min-width: 1200px) {
+                width: 7%;
+            }
+        }
+        &__content {
+            @media screen and (min-width: 700px) {
+                padding: 30px 70px;
+            }
+            @media screen and (min-width: map-get($breakepoints, $small-desktop)) {
+                padding: 30px 200px;
             }
         }
     }
     &__container {
         height: 90%;
         text-align: center;
+        @media screen and (min-width: map-get($breakepoints, $desktop)) {
+            height: 75%;
+        }
     }
     &__image-box {
         width: 90%;
         height: 12%;
         margin: 0 auto;
-        @media screen and (min-width: map-get($breakepoints, $large-smartphone)) {
+        @media screen and (min-width: map-get($breakepoints, $smartphone)) {
             width: 70%;
+            height: 10%;
+        }
+        @media screen and (min-width: map-get($breakepoints, $large-smartphone)) {
+            width: 60%;
+        }
+        @media screen and (min-width: 700px) {
+            width: 50%;
+        }
+        @media screen and (min-width: map-get($breakepoints, $small-desktop)) {
+            width: 40%;
+        }
+        @media screen and (min-width: map-get($breakepoints, $desktop)) {
+            height: 15%;
         }
     }
     &__img {
@@ -50,9 +84,27 @@
             font-size: 1.7rem;
             width: 80%;
             font-weight: bold;
+            @media screen and (min-width: map-get($breakepoints, $large-smartphone)) {
+                padding: 30px 0px;
+            }
         }
         &__content {
             padding: 30px 30px;
+            @media screen and (min-width: map-get($breakepoints, $large-smartphone)) {
+                padding: 30px 50px;
+            }
+            @media screen and (min-width: 700px) {
+                padding: 30px 70px;
+            }
+            @media screen and (min-width: map-get($breakepoints, $tablet)) {
+                padding: 30px 100px;
+            }
+            @media screen and (min-width: map-get($breakepoints, $small-desktop)) {
+                padding: 30px 150px;
+            }
+            @media screen and (min-width: map-get($breakepoints, $large-desktop)) {
+                padding: 30px 350px;
+            }
         }
         &__button-container {
             display: flex;
