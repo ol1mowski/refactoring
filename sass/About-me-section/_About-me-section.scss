@@ -7,6 +7,12 @@
     @media screen and (min-width: map-get($breakepoints, $small-desktop)){
         height: 200vh;
     }
+    @media (orientation: landscape) and (min-width: map-get($breakepoints, $small-smartphone)) and (max-width: map-get($breakepoints, $tablet)) {
+        height: 300vh;
+    }
+    @media (orientation: landscape) and (min-width: map-get($breakepoints, $small-smartphone)) and (max-width: 900px) {
+        height: 320vh;
+    }
     &__about {
         text-align: center;
         width: 100%;
@@ -35,6 +41,13 @@
         @media screen and (min-width: map-get($breakepoints, $tablet)){
             padding: 0 20vw;
         }
+        @media (orientation: landscape) and (min-width: map-get($breakepoints, $small-smartphone)) and (max-width: map-get($breakepoints, $tablet)) {
+            height: 50%;
+            line-height: 5.5vh;
+        }
+        @media (orientation: landscape) and (min-width: map-get($breakepoints, $small-smartphone)) and (max-width: 900px) {
+            line-height: 6vh;
+        }
     }
     &__information {
         height: 80%;
@@ -43,6 +56,9 @@
             text-align: center;
             @media screen and (min-width: map-get($breakepoints, $large-smartphone)) {
                 height: 50%;
+            }
+            @media (orientation: landscape) and (min-width: map-get($breakepoints, $small-smartphone)) and (max-width: map-get($breakepoints, $tablet)) {
+                height: 60%;
             }
         }
         &__p {
@@ -58,6 +74,16 @@
             }
             @media screen and (min-width: 1200px){
                 padding: 30px 150px;
+            }
+            @media screen and (min-width: 1700px){
+                padding: 30px 350px;
+            }
+            @media (orientation: landscape) and (min-width: map-get($breakepoints, $small-smartphone)) and (max-width: map-get($breakepoints, $tablet)) {
+                padding: 40px 50px;
+                line-height: 5.5vh;
+            }
+            @media (orientation: landscape) and (min-width: map-get($breakepoints, $small-smartphone)) and (max-width: 900px) {
+                line-height: 6vh;
             }
         }
         &__button__container {

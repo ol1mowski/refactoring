@@ -465,6 +465,16 @@ a {
     height: 200vh;
   }
 }
+@media (orientation: landscape) and (min-width: 320px) and (max-width: 855px) {
+  .second-section {
+    height: 300vh;
+  }
+}
+@media (orientation: landscape) and (min-width: 320px) and (max-width: 900px) {
+  .second-section {
+    height: 320vh;
+  }
+}
 .second-section__about {
   text-align: center;
   width: 100%;
@@ -500,6 +510,17 @@ a {
     padding: 0 20vw;
   }
 }
+@media (orientation: landscape) and (min-width: 320px) and (max-width: 855px) {
+  .second-section__p {
+    height: 50%;
+    line-height: 5.5vh;
+  }
+}
+@media (orientation: landscape) and (min-width: 320px) and (max-width: 900px) {
+  .second-section__p {
+    line-height: 6vh;
+  }
+}
 .second-section__information {
   height: 80%;
 }
@@ -510,6 +531,11 @@ a {
 @media screen and (min-width: 535px) {
   .second-section__information__container {
     height: 50%;
+  }
+}
+@media (orientation: landscape) and (min-width: 320px) and (max-width: 855px) {
+  .second-section__information__container {
+    height: 60%;
   }
 }
 .second-section__information__p {
@@ -533,6 +559,22 @@ a {
 @media screen and (min-width: 1200px) {
   .second-section__information__p {
     padding: 30px 150px;
+  }
+}
+@media screen and (min-width: 1700px) {
+  .second-section__information__p {
+    padding: 30px 350px;
+  }
+}
+@media (orientation: landscape) and (min-width: 320px) and (max-width: 855px) {
+  .second-section__information__p {
+    padding: 40px 50px;
+    line-height: 5.5vh;
+  }
+}
+@media (orientation: landscape) and (min-width: 320px) and (max-width: 900px) {
+  .second-section__information__p {
+    line-height: 6vh;
   }
 }
 .second-section__information__button__container {
