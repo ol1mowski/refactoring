@@ -1,0 +1,91 @@
+.projects-section {
+    height: 330vh;
+    &__info {
+        height: 10%;
+        text-align: center;
+        @media screen and (min-width: map-get($breakepoints, $smartphone)) {
+            padding: 30px 30px;
+        }
+        &__name {
+            font-size: $very-big-font-size;
+        }
+        &__hr {
+            width: 30%;
+            background-color: #fff;
+            height: 1%;
+            border: none;
+            border-radius: 15px;
+            margin: 2vh auto;
+            @media screen and (min-width: map-get($breakepoints, $smartphone)) {
+                height: 2%;
+            }
+            @media screen and (min-width: map-get($breakepoints, $large-smartphone)) {
+                width: 20%;
+            }
+        }
+    }
+    &__container {
+        height: 90%;
+        text-align: center;
+    }
+    &__image-box {
+        width: 90%;
+        height: 12%;
+        margin: 0 auto;
+        @media screen and (min-width: map-get($breakepoints, $large-smartphone)) {
+            width: 70%;
+        }
+    }
+    &__img {
+        width: 100%;
+        border-radius: 15px;
+        height: 100%;
+    }
+    &__description {
+        height: 22%;
+        padding: 20px 0px;
+        &__header {
+            display: block;
+            margin: 0 auto;
+            font-size: 1.7rem;
+            width: 80%;
+            font-weight: bold;
+        }
+        &__content {
+            padding: 30px 30px;
+        }
+        &__button-container {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            height: 20%;
+            @media screen and (min-width: map-get($breakepoints, $smartphone)) {
+                height: 15%;
+            }
+            a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 50%;
+                height: 35%;
+                @media screen and (min-width: map-get($breakepoints, $smartphone)) {
+                    height: 60%;
+                    width: 45%;
+                }
+                @media screen and (min-width: map-get($breakepoints, $large-smartphone)) {
+                    width: 25%;
+                }
+                @media screen and (min-width: map-get($breakepoints, $small-desktop)) {
+                    width: 15%;
+                }
+            }
+        }
+        &__btn {
+            background-color: $btn-bg-color;
+            font-weight: bold;
+            font-size: $small-font-size;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}

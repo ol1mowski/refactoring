@@ -12,7 +12,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Ol1mowski</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
     <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
@@ -51,7 +51,7 @@
                 <a href="#about">
                     <div class="menu__item">ABOUT</div>
                 </a>
-                <a href="#projectsMain">
+                <a href="#projects">
                     <div class="menu__item">PROJECTS</div>
                 </a>
                 <a href="#contact_main">
@@ -148,50 +148,71 @@
 
         </section>
 
-        <section id="projectsMain">
-            <div id="infoProjects">
-                <h1 style="font-size: 40px;">Projects</h1>
+        <section id="projects" class="projects-section">
+            <div class="projects-section__info">
+                <span class="projects-section__info__name">Projects</span>
                 <br />
-                <hr id="projectsHr">
+                <hr class="projects-section__info__hr">
                 <br />
-                <br />
-                <p class="Pcontact">Here you will find some of the personal and clients projects that I created with each project <br> containing its own case study</p>
+                <p class="projects-section__info__content">Here you will find some of the personal and clients projects that I created with each project <br> containing its own case study</p>
             </div>
-            <div id="projects_container">
-                <div id="projects_imgOne">
-                    <img class="imgP" style="border-radius: 15px; float: right;" width="400px" height="400px" src="./img/Sklep.png" alt="page computer store">
+            <div class="projects-section__container">
+
+
+
+
+                <div class="projects-section__image-box">
+                    <img class="projects-section__img" src="./img/Sklep.png" alt="page computer store" loading="lazy">
                 </div>
-                <div id="projectsContentOne">
-                    <h1>Webpage Computer store</h1>
-                    <p style="margin-top: 5vh;">
+                <div class="projects-section__description">
+                    <span class="projects-section__description__header">Webpage Computer store</span>
+                    <p class="projects-section__description__content">
                         computer store website design is an interactive platform that allows you to get acquainted with the computer store's offer. The page consists of several main elements, including navigation menu, product offer,
                         and contact module.</p>
                     <br>
-                    <br>
-                    <a href="./projects/Project1.html" target="_blank" rel="noopener noreferrer"><button class="bp1">Case Study</button></a>
+                    <div class="projects-section__description__button-container">
+                        <a href="./projects/Project1.html" target="_blank" rel="noopener noreferrer">
+                            <button class="projects-section__description__btn">Case Study</button>
+                        </a>
+                    </div>
                 </div>
-                <div id="projects_imgTwo">
-                    <img class="imgP" style="border-radius: 15px; float: right;" width="400px" height="400px" src="./img/LogoKrzyza.png" alt="Web site computer store">
+
+
+
+
+
+                <div class="projects-section__image-box">
+                    <img class="projects-section__img" src="./img/LogoKrzyza.png" alt="Web site computer store" loading="lazy">
                 </div>
-                <div id="projectsContentTwo">
-                    <h1>Tic-tac-toe game</h1>
-                    <p style="margin-top: 5vh;">
+                <div class="projects-section__description">
+                    <span class="projects-section__description__header">Tic-tac-toe game</span>
+                    <p class="projects-section__description__content">
                         The tic-tac-toe game was made by me during my apprenticeship in spain. The game allows 2 players to play</p>
                     <br>
-                    <br>
-                    <a href="./projects/Project2.html" target="_blank" rel="noopener noreferrer"><button class="bp1">Case Study</button></a>
+                    <div class="projects-section__description__button-container">
+                        <a href="./projects/Project2.html" target="_blank" rel="noopener noreferrer">
+                            <button class="projects-section__description__btn">Case Study</button>
+                        </a>
+                    </div>
                 </div>
-                <div id="projects_imgThree">
-                    <img class="imgP" style="border-radius: 15px; float: right;" width="400px" height="400px" src="./img/Portfolio.png" alt="Portfolio">
+
+
+                <div class="projects-section__image-box">
+                    <img class="projects-section__img" src="./img/Portfolio.png" alt="Portfolio" loading="lazy">
                 </div>
-                <div id="projectsContentThree">
-                    <h1>My Portfolio</h1>
-                    <p style="margin-top: 5vh;">
+                <div class="projects-section__description">
+                    <span class="projects-section__description__header">My Portfolio</span>
+                    <p class="projects-section__description__content">
                         My project portfolio was fully designed and implemented by me. It contains some of my projects as well as a contact form and links to e.g. github and YouTube channel</p>
                     <br>
-                    <br>
-                    <a href="./projects/Project3.html" target="_blank" rel="noopener noreferrer"><button class="bp1">Case Study</button></a>
+                    <div class="projects-section__description__button-container">
+                        <a href="./projects/Project1.html" target="_blank" rel="noopener noreferrer">
+                            <button class="projects-section__description__btn">Case Study</button>
+                        </a>
+                    </div>
                 </div>
+
+
             </div>
         </section>
         <section id="contact_main">
