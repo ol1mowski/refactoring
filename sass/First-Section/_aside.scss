@@ -1,0 +1,24 @@
+.social-block {
+    display: none;
+    height: 100vh;
+    width: 10vw;
+    @media screen and (min-width: map-get($breakepoints, $small-desktop)) {
+        display: inline-block;
+    }
+    &__wrapper {
+        position: relative;
+        left: 2vw;
+        height: 40%;
+        width: 100%;
+    }
+    &__yt-icon, &__github-icon, &__discord-icon {
+        margin-top: 40%;
+        width: 50%;
+        @media screen and (min-width: map-get($breakepoints, $small-desktop)) {
+            width: 40%;
+        }
+        @media screen and (min-width: map-get($breakepoints, $large-desktop)) {
+            width: 30%;
+        }
+    }
+}

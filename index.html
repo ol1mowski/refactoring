@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Oliwier Markiewicz" />
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="portfolio, web developer, Ol1mowski, Oliwier Markiewicz, programer, JavaScript Developer">
+    <meta name="description" content="Website portfolio web developer with Three projects and formulage to contact with me" />
+    <meta name="application-name" content="Portfolio" />
+    <meta name="generator" content="VisualStudioCode" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Ol1mowski</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+
+</head>
+
+<body>
+  <!--  <div class="animate">
+        <span class="span__loading">Loading...</span>
+        <img src="./img/react_icon.png" alt="React icon">
+    </div>-->
+    <!--<img class="background" src="./img/icon/react.svg" alt="react icon">
+    <img class="backgroundTwo" src="./img/icon/code-solid.svg" alt="code">-->
+    <div id="home"></div>
+    <header class="header">
+        <div class="header__wrapper-inline">
+            <div class="header__image-box">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"/></svg>
+                <span class="header__image-box__name">Oliwier Markiewicz</span>
+            </div>
+        </div>
+        <div class="hamburger">
+            <div class="hamburger__container__flex">
+                <div class="hamburger__container">
+                    <div class="hamburger__lines"></div>
+                    <div class="hamburger__lines"></div>
+                    <div class="hamburger__lines"></div>
+                </div>
+            </div>
+        </div>
+        <div class="menu">
+            <div class="menu__items">
+                <a href="#home">
+                    <div class="menu__item">HOME</div>
+                </a>
+                <a href="#about">
+                    <div class="menu__item">ABOUT</div>
+                </a>
+                <a href="#projectsMain">
+                    <div class="menu__item">PROJECTS</div>
+                </a>
+                <a href="#contact_main">
+                    <div class="menu__item">CONTACT</div>
+                </a>
+            </div>
+        </div>
+    </header>
+        <aside class="social-block">
+            <div class="social-block__wrapper">
+                <div class="social-block__yt-icon">
+                    <a href="https://www.youtube.com/channel/UCTNFKRALTZoSQS6mDOuDs2Q" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg>
+                    </a>
+                </div>
+                <div class="social-block__github-icon">
+                    <a href="https://github.com/ol1mowski?tab=repositories" target="_blank" rel="noopener noreferrer">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="social-block__discord-icon">
+                    <a href="" target="_blank" rel="noopener noreferrer">
+                        <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M524.531,69.836a1.5,1.5,0,0,0-.764-.7A485.065,485.065,0,0,0,404.081,32.03a1.816,1.816,0,0,0-1.923.91,337.461,337.461,0,0,0-14.9,30.6,447.848,447.848,0,0,0-134.426,0,309.541,309.541,0,0,0-15.135-30.6,1.89,1.89,0,0,0-1.924-.91A483.689,483.689,0,0,0,116.085,69.137a1.712,1.712,0,0,0-.788.676C39.068,183.651,18.186,294.69,28.43,404.354a2.016,2.016,0,0,0,.765,1.375A487.666,487.666,0,0,0,176.02,479.918a1.9,1.9,0,0,0,2.063-.676A348.2,348.2,0,0,0,208.12,430.4a1.86,1.86,0,0,0-1.019-2.588,321.173,321.173,0,0,1-45.868-21.853,1.885,1.885,0,0,1-.185-3.126c3.082-2.309,6.166-4.711,9.109-7.137a1.819,1.819,0,0,1,1.9-.256c96.229,43.917,200.41,43.917,295.5,0a1.812,1.812,0,0,1,1.924.233c2.944,2.426,6.027,4.851,9.132,7.16a1.884,1.884,0,0,1-.162,3.126,301.407,301.407,0,0,1-45.89,21.83,1.875,1.875,0,0,0-1,2.611,391.055,391.055,0,0,0,30.014,48.815,1.864,1.864,0,0,0,2.063.7A486.048,486.048,0,0,0,610.7,405.729a1.882,1.882,0,0,0,.765-1.352C623.729,277.594,590.933,167.465,524.531,69.836ZM222.491,337.58c-28.972,0-52.844-26.587-52.844-59.239S193.056,219.1,222.491,219.1c29.665,0,53.306,26.82,52.843,59.239C275.334,310.993,251.924,337.58,222.491,337.58Zm195.38,0c-28.971,0-52.843-26.587-52.843-59.239S388.437,219.1,417.871,219.1c29.667,0,53.307,26.82,52.844,59.239C470.715,310.993,447.538,337.58,417.871,337.58Z"/></svg>
+                    </a>
+                </div>
+            </div>
+        </aside>
+        <section id="home" class="first-section">
+            <div class="first-section__wrapper">
+                <div class="first-section__name">
+                    <span class="first-section__name__content">HEY, I'M OLIWIER MARKIEWICZ</span>
+                </div>
+                <div class="first-section__description">
+                    <h3>A Frontend focused Web Developer building the frontend of Websites and Web Applications that leads to the success of the overall product</h3>
+                </div>
+                <div class="first-section__button-section">
+                    <a href="#projectsMain">
+                        <button class="first-section__btn">PROJECTS</button>
+                    </a>
+                </div>
+            </div>
+          <!--  <div class="slide-down">
+                <div class="slide-down__border">
+                    <div class="slide-down__wheel"></div>
+                </div>
+            </div>-->
+        </section>
+
+
+        <section id="about" class="second-section">
+            <div class="second-section__about">
+                <span class="second-section__title">ABOUT ME</span>
+                <br />
+                <hr class="second-section__hr">
+                <br />
+                <p class="second-section__p">Here you will find more information about me, what I do, and my current skills mostly in terms <br/> of programming and technology</p>
+            </div>
+            <div class="second-section__information">
+                <div class="second-section__information__container">
+                    <span class="second-section__title">Get to know me!</span>
+                    <p class="second-section__information__p">I'm a <b>Frontend Web Developer</b> building the Front-end of Websites and Web Applications that leads to the success of the overall product. Check out some of my work in the <b>Projects</b> section. <br /> <br /> also like sharing
+                        content related to the stuff that I have learned over the years in Web Development so it can help other people of the Dev Community. Feel free to Connect or Follow me on my
+                        <a href="https://www.youtube.com/channel/UCTNFKRALTZoSQS6mDOuDs2Q" target="_blank" rel="noopener noreferrer"><span id="ytSpan">YouTube chanel</span></a> where I post useful content related to <b>Web Development </b>and Programming
+                        <br /> <br />I'm open to <b>Job</b> opportunities where I can contribute, learn and grow. If you have a good opportunity that matches my skills and experience then don't hesitate to <b>contact</b> me. <br /> <br /></p>
+                    
+                        <div class="second-section__information__button__container">
+                            <a href="#contact_main">
+                                <button class="second-section__information__btn">CONTACT</button>
+                            </a>
+                        </div>
+                </div>
+                <div class="second-section__skills">
+                    <span class="second-section__skills__header">My skills</span>
+                    <br />
+                        <div class="second-section__skills-icon">
+                            <div class="skills__skill">HTML</div>
+                            <div class="skills__skill">CSS</div>
+                            <div class="skills__skill">JavaScript</div>
+                            <div class="skills__skill">React.js</div>
+                            <div class="skills__skill">jQuery</div>
+                            <div class="skills__skill">GIT</div>
+                            <div class="skills__skill">Node.js</div>
+                            <div class="skills__skill">Express.js</div>
+                            <div class="skills__skill">RWD</div>
+                            <div class="skills__skill">TypeScript</div>
+                            <div class="skills__skill">Terminal</div>
+                            <div class="skills__skill">Python</div>
+                            <div class="skills__skill">SQL</div>
+                            <div class="skills__skill">MongoDB</div>
+                        </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="projectsMain">
+            <div id="infoProjects">
+                <h1 style="font-size: 40px;">Projects</h1>
+                <br />
+                <hr id="projectsHr">
+                <br />
+                <br />
+                <p class="Pcontact">Here you will find some of the personal and clients projects that I created with each project <br> containing its own case study</p>
+            </div>
+            <div id="projects_container">
+                <div id="projects_imgOne">
+                    <img class="imgP" style="border-radius: 15px; float: right;" width="400px" height="400px" src="./img/Sklep.png" alt="page computer store">
+                </div>
+                <div id="projectsContentOne">
+                    <h1>Webpage Computer store</h1>
+                    <p style="margin-top: 5vh;">
+                        computer store website design is an interactive platform that allows you to get acquainted with the computer store's offer. The page consists of several main elements, including navigation menu, product offer,
+                        and contact module.</p>
+                    <br>
+                    <br>
+                    <a href="./projects/Project1.html" target="_blank" rel="noopener noreferrer"><button class="bp1">Case Study</button></a>
+                </div>
+                <div id="projects_imgTwo">
+                    <img class="imgP" style="border-radius: 15px; float: right;" width="400px" height="400px" src="./img/LogoKrzyza.png" alt="Web site computer store">
+                </div>
+                <div id="projectsContentTwo">
+                    <h1>Tic-tac-toe game</h1>
+                    <p style="margin-top: 5vh;">
+                        The tic-tac-toe game was made by me during my apprenticeship in spain. The game allows 2 players to play</p>
+                    <br>
+                    <br>
+                    <a href="./projects/Project2.html" target="_blank" rel="noopener noreferrer"><button class="bp1">Case Study</button></a>
+                </div>
+                <div id="projects_imgThree">
+                    <img class="imgP" style="border-radius: 15px; float: right;" width="400px" height="400px" src="./img/Portfolio.png" alt="Portfolio">
+                </div>
+                <div id="projectsContentThree">
+                    <h1>My Portfolio</h1>
+                    <p style="margin-top: 5vh;">
+                        My project portfolio was fully designed and implemented by me. It contains some of my projects as well as a contact form and links to e.g. github and YouTube channel</p>
+                    <br>
+                    <br>
+                    <a href="./projects/Project3.html" target="_blank" rel="noopener noreferrer"><button class="bp1">Case Study</button></a>
+                </div>
+            </div>
+        </section>
+        <section id="contact_main">
+            <div id="infoProjects">
+                <h1 style="font-size: 35px;">Contact</h1>
+                <br />
+                <hr id="projectsHr">
+                <br />
+                <br />
+                <p class="Pcontact">Feel free to Contact me by submitting the form below and <br> I will get back to you as soon as possible</p>
+            </div>
+            <div id="formM" class="contact__form-container">
+                <form style="margin: auto;" autocomplete="off" class='contact__form' action="https://usebasin.com/f/53e4037cb8e2" method="POST">
+                    <input type="hidden" name="_captcha" value="false">
+                    <div id="inp__One" class="contact__form-field">
+                        <label class="contact__form-label" for="name">Name</label>
+                        <input required placeholder="Enter Your Name" type="text" class="contact__form-input" name="name" id="nameForm" />
+                    </div>
+                    <div id="inp__Two" class="contact__form-field">
+                        <label class="contact__form-label" for="email">Email</label>
+                        <input required placeholder="Enter Your Email" type="email" class="contact__form-input" name="email" id="email" />
+                    </div>
+                    <div id="inp__Three" class="contact__form-field">
+                        <label class="contact__form-label" for="message">Message</label>
+                        <textarea required cols="30" rows="10" class="contact__form-input" placeholder="Enter Your Message" name="message" id="message"></textarea>
+                    </div>
+                    <button id="Sub">Submit</button>
+                </form>
+            </div>
+        </section>
+
+    <footer id="footerMain">
+        <div id="footer_main">
+            <div id="nameF">
+                <h3>OLIWIER MARKIEWICZ</h3>
+                <br>
+                <p id="no">A Frontend focused Web Developer building the Frontend of Websites and Web Applications that leads to the success of the overall product</p>
+            </div>
+            <div id="socialF">
+                <h3 style="float: right;">SOCIAL</h3>
+                <br>
+                <br>
+                <div id="git_f">
+                    <a href="https://github.com/ol1mowski?tab=repositories" target="_blank" rel="noopener noreferrer"><img width="100%" height="100%" src="./img/icon/github-ico.png" alt="Git Hub icon"></a>
+                </div>
+                <div id="yt_f">
+                    <a href="https://www.youtube.com/channel/UCTNFKRALTZoSQS6mDOuDs2Q" target="_blank"><img width="100%" height="100%" src="./img/icon/yt-ico.png" alt="You Tube icon"></a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </footer>
+
+    
+    <script src="./app.js"></script>
+  <!-- <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          const typed1 = new Typed('#oneH1', {
+            strings: ["HEY, I'M OLIWIER MARKIEWICZ"],
+            typeSpeed: 50,
+            showCursor: false,
+          });
+          const typed2 = new Typed('#h3', {
+            strings: ["A Frontend focused Web Developer building the frontend of Websites and Web Applications that leads to the success of the overall product"],
+            typeSpeed: 50,
+            showCursor: false,
+          });
+        });
+        </script>-->
+        
+    
+</body>
+
+</html>

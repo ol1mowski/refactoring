@@ -1,0 +1,26 @@
+$main-bg-color: #ccc;
+$main-font-color: #666;
+$small-font-size: 1rem;
+$big-font-size: 1.3rem;
+$very-big-font-size: 2rem;
+$btn-bg-color: #6666663f;
+
+
+$small-smartphone: 320px;
+$smartphone: 375px;
+$large-smartphone: 535px;
+$tablet: 855px;
+$small-desktop: 1024px;
+$desktop: 1440px;
+$large-desktop: 1700px;
+
+
+$breakepoints: (
+    $small-smartphone: 320px,
+    $smartphone: 375px,
+    $large-smartphone: 535px,
+    $tablet: 855px,
+    $small-desktop: 1024px,
+    $desktop: 1440px,
+    $large-desktop: 1700px,
+);

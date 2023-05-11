@@ -1,0 +1,138 @@
+.header {
+    @media (orientation: landscape) and (min-width: map-get($breakepoints, $small-smartphone)) and (max-width: map-get($breakepoints, $tablet)) {
+        height: 24vh;
+        .header__image-box__name {
+            height: 25vh;
+            display: flex;
+            align-items: center;
+            line-height: 7vh;
+        }
+        .hamburger {
+            height: 20vh;
+            &__lines {
+                width: 7vw;
+                margin-bottom: 1.5vh;
+                height: 1.5vh;
+            }
+        }
+        .menu {
+            height: 35vh;
+            &__item {
+                margin-top: 4vh;
+            }
+        }
+    }
+    
+    font-size: $small-font-size;
+    @media screen and (min-width: map-get($breakepoints, $large-smartphone)) {
+        font-size: $big-font-size;
+    }
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    width: 100vw;
+    height: 15vh;
+    background-color: $main-bg-color;
+    &__wrapper-inline {
+        display: inline-block;
+        height: 100%;
+    }
+    &__image-box {
+        width: 50vw;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        svg {
+            width: 50%;
+            height: 50%;
+            @media screen and (min-width: 720px) {
+               width: 30%;
+            }
+        }
+        &__name {
+            margin-left: 5vw;
+            @media screen and (min-width: map-get($breakepoints, $large-smartphone)) {
+                margin-left: 0;
+            }
+        }
+    }
+    
+}
+
+.hamburger {
+    position: relative;
+    bottom: 1.7vh;
+    display: inline-block;
+    width: 35vw;
+    height: 10vh;
+    &__container__flex{
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        width: 100%;
+        height: 100%;
+    }
+    &__lines {
+        background-color: #000;
+        width: 10vw;
+        margin-bottom: 1vh;
+        height: 0.5vh;
+        @media screen and (min-width: 535px) {
+            width: 5vw;
+        }
+        @media screen and (min-width: 710px) {
+            width: 5vw;
+        }
+        @media screen and (min-width: 1024px) {
+            display: none;
+        }
+    }
+    @media screen and (min-width: 1024px) {
+        display: none;
+    }
+}
+
+
+.menu {
+    display: none;
+    position: fixed;
+    right: 0;
+    width: 30vw;
+    height: 17vh;
+    background-color: $main-bg-color;
+    @media screen and (min-width: 535px) and (orientation: pointer) {
+        width: 20vw;
+    }
+    @media screen and (min-width: 1024px) {
+        display: inline-block;
+        position: fixed;
+        top: 6vh;
+        right: 10vw;
+        width: 47vw;
+        height: 7vh;
+    }
+    &__items {
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        a {
+            text-decoration: none;
+        }
+    }
+    &__item{
+        margin-bottom: 1vh;
+        transition: all 0.7s;
+        @media screen and (min-width: 1024px) {
+            display: inline-block;
+            margin-left: 3vw;
+            transition: all 0.7s;
+        }
+    }
+    &__item:hover {
+        @media screen and (min-width: 1024px) {
+            border: 1px solid #000;
+            cursor: pointer;
+        }
+    }
+}

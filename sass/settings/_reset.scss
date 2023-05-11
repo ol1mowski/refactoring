@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Source+Code+Pro:wght@300&display=swap');
+
+*,
+ ::after,
+ ::before {
+    color: $main-font-color;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Press Start 2P', cursive;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: bold;
+    line-height: 3.5vh;
+}
+
+
+
+body {
+    background-color: $main-bg-color;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+button {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
