@@ -3,12 +3,21 @@
     @media screen and (min-width: map-get($breakepoints, $desktop)) {
         height: 350vh;
     }
+    @media (orientation: landscape) and (min-width: map-get($breakepoints, $small-smartphone)) and (max-width: map-get($breakepoints, $tablet)) {
+        height: 350vh;
+    }
     &__info {
         height: 10%;
         text-align: center;
         @media screen and (min-width: map-get($breakepoints, $smartphone)) {
             padding: 30px 30px;
             height: 15%;
+        }
+        @media (orientation: landscape) and (min-width: map-get($breakepoints, $small-smartphone)) and (max-width: map-get($breakepoints, $tablet)) {
+            height: 20%;
+        }
+        @media (orientation: landscape) and (min-width: map-get($breakepoints, $small-smartphone)) and (max-width: 920px) {
+            height: 20%;
         }
         &__name {
             font-size: $very-big-font-size;
@@ -32,6 +41,14 @@
             @media screen and (min-width: 1200px) {
                 width: 7%;
             }
+            @media (orientation: landscape) and (min-width: map-get($breakepoints, $small-smartphone)) and (max-width: map-get($breakepoints, $tablet)) {
+                margin: 4vh auto;
+                height: 2%;
+            }
+            @media (orientation: landscape) and (min-width: map-get($breakepoints, $small-smartphone)) and (max-width: 920px) {
+                height: 2%;
+                margin: 4vh auto;
+            }
         }
         &__content {
             @media screen and (min-width: 700px) {
@@ -40,6 +57,13 @@
             @media screen and (min-width: map-get($breakepoints, $small-desktop)) {
                 padding: 30px 200px;
             }
+            @media (orientation: landscape) and (min-width: map-get($breakepoints, $small-smartphone)) and (max-width: map-get($breakepoints, $tablet)) {
+                line-height: 6vh;
+                padding: 0px 70px;
+            }
+            @media (orientation: landscape) and (min-width: map-get($breakepoints, $small-smartphone)) and (max-width: 920px) {
+                line-height: 6.5vh;
+            }
         }
     }
     &__container {
@@ -47,6 +71,9 @@
         text-align: center;
         @media screen and (min-width: map-get($breakepoints, $desktop)) {
             height: 75%;
+        }
+        @media (orientation: landscape) and (min-width: map-get($breakepoints, $small-smartphone)) and (max-width: map-get($breakepoints, $tablet)) {
+            height: 80%;
         }
     }
     &__image-box {
@@ -69,6 +96,15 @@
         @media screen and (min-width: map-get($breakepoints, $desktop)) {
             height: 15%;
         }
+        @media screen and (min-width: map-get($breakepoints, $desktop)) {
+            width: 30%;
+        }
+        @media (orientation: landscape) and (min-width: map-get($breakepoints, $small-smartphone)) and (max-width: map-get($breakepoints, $tablet)) {
+            height: 25%;
+        }
+        @media (orientation: landscape) and (min-width: map-get($breakepoints, $small-smartphone)) and (max-width: 920px) {
+            height: 20%;
+        }
     }
     &__img {
         width: 100%;
@@ -78,6 +114,12 @@
     &__description {
         height: 22%;
         padding: 20px 0px;
+        @media (orientation: landscape) and (min-width: map-get($breakepoints, $small-smartphone)) and (max-width: map-get($breakepoints, $tablet)) {
+            margin-bottom: 36vh;
+        }
+        @media (orientation: landscape) and (min-width: map-get($breakepoints, $small-smartphone)) and (max-width: 920px) {
+            height: 30%;
+        }
         &__header {
             display: block;
             margin: 0 auto;
@@ -90,6 +132,7 @@
         }
         &__content {
             padding: 30px 30px;
+            text-align: left;
             @media screen and (min-width: map-get($breakepoints, $large-smartphone)) {
                 padding: 30px 50px;
             }
@@ -105,6 +148,12 @@
             @media screen and (min-width: map-get($breakepoints, $large-desktop)) {
                 padding: 30px 350px;
             }
+            @media (orientation: landscape) and (min-width: map-get($breakepoints, $small-smartphone)) and (max-width: map-get($breakepoints, $tablet)) {
+                line-height: 6vh;
+            }
+            @media (orientation: landscape) and (min-width: map-get($breakepoints, $small-smartphone)) and (max-width: 920px) {
+                line-height: 6.5vh;
+            }
         }
         &__button-container {
             display: flex;
@@ -113,6 +162,12 @@
             height: 20%;
             @media screen and (min-width: map-get($breakepoints, $smartphone)) {
                 height: 15%;
+            }
+            @media (orientation: landscape) and (min-width: map-get($breakepoints, $small-smartphone)) and (max-width: map-get($breakepoints, $tablet)) {
+                height: 20%;
+            }
+            @media (orientation: landscape) and (min-width: map-get($breakepoints, $small-smartphone)) and (max-width: 920px) {
+                height: 20%;
             }
             a {
                 display: flex;
@@ -129,6 +184,9 @@
                 }
                 @media screen and (min-width: map-get($breakepoints, $small-desktop)) {
                     width: 15%;
+                }
+                @media (orientation: landscape) and (min-width: map-get($breakepoints, $small-smartphone)) and (max-width: map-get($breakepoints, $tablet)) {
+                    height: 100%;
                 }
             }
         }

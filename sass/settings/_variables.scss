@@ -34,6 +34,12 @@ $breakepoints: (
         @media screen and (min-width: map-get($breakepoints, $smartphone)) {
             height: 15%;
         }
+        @media (orientation: landscape) and (min-width: map-get($breakepoints, $small-smartphone)) and (max-width: map-get($breakepoints, $tablet)) {
+            height: 20%;
+        }
+        @media (orientation: landscape) and (min-width: map-get($breakepoints, $small-smartphone)) and (max-width: 920px) {
+            height: 20%;
+        }
     }
 }
 @mixin buttonA {
@@ -52,6 +58,9 @@ $breakepoints: (
         }
         @media screen and (min-width: map-get($breakepoints, $small-desktop)) {
             width: 15%;
+        }
+        @media (orientation: landscape) and (min-width: map-get($breakepoints, $small-smartphone)) and (max-width: map-get($breakepoints, $tablet)) {
+            height: 100%;
         }
     }
 }
