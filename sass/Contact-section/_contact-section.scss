@@ -1,0 +1,26 @@
+.contact-section {
+    height: 150vh;
+    &__header {
+        height: 30%;
+        text-align: center;
+        &__title {
+            display: block;
+            font-size: $very-big-font-size;
+            height: 5%;
+        }
+        &__hr {
+            width: 25%;
+            background-color: #fff;
+            height: 1.5%;
+            border: none;
+            border-radius: 15px;
+            margin: 4vh auto;
+        }
+        &__content {
+            width: 70%;
+            height: 50%;
+            margin: 0 auto;
+            text-align: left;
+        }
+    }
+}

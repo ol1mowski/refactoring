@@ -42,7 +42,9 @@
             line-height: 11vh;
             width: 80%;
         }
+
     }
+      
     
     &__name__content {
         text-align: center;
@@ -88,6 +90,18 @@
             @media (orientation: landscape) and (min-width: map-get($breakepoints, $small-smartphone)) and (max-width: map-get($breakepoints, $tablet)) {
                 line-height: 7.5vh;
             }
+        }
+        h3::after {
+            content: '|';
+            animation: cursor .3s infinite alternate;
+            @keyframes cursor {
+                0%, 30% {
+                  opacity: 0
+                }
+                70%, 100% {
+                  opacity: 1
+                }
+              }
         }
         @media screen and (min-width: 415px) {
             width: 90%;

@@ -15,6 +15,38 @@ const animate = (element, position) => {
 }
 
 
+
+const box1 = document.querySelector('.first-section__name__content');
+const text1 = "HEY, I'M OLIWIER MARKIEWICZ";
+let worldIndex1 = 0;
+
+const box2 = document.querySelector('#h3');
+const text2 = "A Frontend focused Web Developer building the frontend of Websites and Web Applications that leads to the success of the overall product";
+let worldIndex2 = 0;
+
+let oldTime = 0;
+const speed = 150;
+
+const typing = (newTime) => {
+    if (newTime - oldTime > speed) {
+        oldTime = newTime;
+        if (worldIndex1 < text1.length) {
+            const letter = text1.substr(worldIndex1, 1);
+            box1.textContent += letter;
+            worldIndex1++;
+        } else if (worldIndex2 < text2.length) {
+            const letter = text2.substr(worldIndex2, 1);
+            box2.textContent += letter;
+            worldIndex2++;
+        }
+    }
+
+    requestAnimationFrame(typing);
+}
+
+typing();
+
+
 /*const AnimateElement1 = document.getElementById('info');
 const ScrollElement1 = document.getElementById('aboutBlock');
 const elementPosition1 = ScrollElement1.getBoundingClientRect().top + window.pageYOffset;
@@ -105,10 +137,10 @@ $(document).ready(function() {
 
 //form remove content in input 
 
-const sendButton = document.querySelector('#Sub');
+/*const sendButton = document.querySelector('#Sub');
 const InputAll = document.querySelector('.contact__form-input');
 
 
 sendButton.addEventListener('click', () => {
     InputAll.value == '';
-})
+})*/
