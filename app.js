@@ -25,7 +25,7 @@ const text2 = "A Frontend focused Web Developer building the frontend of Website
 let worldIndex2 = 0;
 
 let oldTime = 0;
-const speed = 150;
+const speed = 100;
 
 const typing = (newTime) => {
     if (newTime - oldTime > speed) {

@@ -23,4 +23,18 @@
             text-align: left;
         }
     }
+    &__form-container {
+        height: 70%;
+    }
+    &__form {
+        margin: 0 auto;
+        width: 90%;
+        padding: 7vh 5vw;
+        height: 70%;
+        border-radius: 15px;
+        background-color: grey;
+        label {
+            display: block;
+        }
+    }
 }
