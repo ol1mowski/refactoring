@@ -220,19 +220,21 @@
             <div class="contact-section__form-container">
                 <form autocomplete="off" class='contact-section__form' action="https://usebasin.com/f/53e4037cb8e2" method="POST">
                     <input type="hidden" name="_captcha" value="false">
-                    <div id="inp__One" class="contact-section__form-field">
-                        <label class="contact-section__form-label" for="name">Name</label>
-                        <input required placeholder="Enter Your Name" type="text" class="contact__form-input" name="name" id="name" />
+                    <div id="inp__One" class="contact-section__form__field">
+                        <label class="contact-section__form__label" for="name">Name</label>
+                        <input required placeholder="Enter Your Name" type="text" class="contact-section__form__input" name="name" id="name" />
                     </div>
-                    <div id="inp__Two" class="contact-section__form-field">
-                        <label class="contact-section__form-label" for="email">Email</label>
-                        <input required placeholder="Enter Your Email" type="email" class="contact__form-input" name="email" id="email" />
+                    <div id="inp__Two" class="contact-section__form__field">
+                        <label class="contact-section__form__label" for="email">Email</label>
+                        <input required placeholder="Enter Your Email" type="email" class="contact-section__form__input" name="email" id="email" />
                     </div>
-                    <div class="contact-section__form-field">
-                        <label class="contact-section__form-label" for="message">Message</label>
-                        <textarea required cols="30" rows="10" class="contact__form-input" placeholder="Enter Your Message" name="message" id="message"></textarea>
+                    <div class="contact-section__form__field--message">
+                        <label class="contact-section__form__label" for="message">Message</label>
+                        <textarea required cols="30" rows="10" class="contact-section__form__message" placeholder="Enter Your Message" name="message" id="message"></textarea>
                     </div>
-                    <button id="contact-section__form__btn">Submit</button>
+                    <div class="contact-section__form__btn-container">
+                        <button class="contact-section__form__btn">Submit</button>
+                    </div>
                 </form>
             </div>
         </section>
