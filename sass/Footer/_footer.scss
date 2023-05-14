@@ -1,0 +1,51 @@
+.footer {
+    background-color: #000;
+    &__wrapper {
+        margin: 0 auto;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    &__author-description {
+        padding: 4vh 0px;
+        height: 45%;
+        &__content {
+            padding-bottom: 6vh;
+            border-bottom: 1px solid #fff;
+        }
+    }
+    &__icon-container {
+        padding-top: 4vh;
+        order: -1;
+        height: 45%;
+        @media screen and (min-width: map-get($breakepoints, $tablet)) {
+            order: 0;
+        }
+        &__github {
+            height: 20%;
+            display: inline-block;
+        }
+        &__youtube {
+            height: 20%;
+            display: inline-block;
+        }
+    }
+    &__copyright {
+        height: 10%;
+        text-align: center;
+        &__content {
+            font-size: .8rem;
+        }
+    }
+}
+
+.footer-icon__yt {
+    width: 30%;
+    height: 30%;
+}
+
+.footer-icon__gh {
+    width: 100%;
+    height: 100%;
+}

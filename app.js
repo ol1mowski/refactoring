@@ -104,12 +104,18 @@ animate(AnimateElement8, elementPosition8)
 //Formulage Animation
 */
 //delay scroll
+
+const now = new Date();
+const footer = document.querySelector('.footer__copyright__content');
+footer.innerText = `© Copyright ${now.getFullYear()}. Made by Oliwier Markiewicz`
+
+
 function scroll(e) {
     const href = $(this).attr('href');
     e.preventDefault();
     $('html, body').animate({
         scrollTop: $(href).offset().top
-    }, 800);
+    }, 1000);
 
     location.hash = href;
 };
