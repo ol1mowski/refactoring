@@ -3,16 +3,35 @@
     &__wrapper {
         margin: 0 auto;
         width: 90%;
+    }
+    &__contant-wrapper {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        border-bottom: 1px solid #fff;
+        @media screen and (min-width: map-get($breakepoints, $tablet)) {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        @media (orientation: landscape) and (min-width: map-get($breakepoints, $small-smartphone)) and (max-width: map-get($breakepoints, $tablet)) {
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 10vh 0;
+        }
     }
     &__author-description {
         padding: 4vh 0px;
         height: 45%;
+        @media screen and (min-width: map-get($breakepoints, $tablet)) {
+            width: 50%;
+        } 
+        @media (orientation: landscape) and (min-width: map-get($breakepoints, $small-smartphone)) and (max-width: map-get($breakepoints, $tablet)) {
+            width: 50%;
+        }
         &__content {
-            padding-bottom: 6vh;
-            border-bottom: 1px solid #fff;
+            @media (orientation: landscape) and (min-width: map-get($breakepoints, $small-smartphone)) and (max-width: map-get($breakepoints, $tablet)) {
+                line-height: 6.5vh;
+            }
         }
     }
     &__icon-container {
@@ -20,6 +39,9 @@
         order: -1;
         height: 45%;
         @media screen and (min-width: map-get($breakepoints, $tablet)) {
+            order: 0;
+        }
+        @media (orientation: landscape) and (min-width: map-get($breakepoints, $small-smartphone)) and (max-width: map-get($breakepoints, $tablet)) {
             order: 0;
         }
         &__github {
@@ -33,9 +55,14 @@
     }
     &__copyright {
         height: 10%;
+        padding-top: 1vh;
         text-align: center;
+        padding: 10vh 0;
         &__content {
             font-size: .8rem;
+        }
+        @media screen and (min-width: 1700px) {
+            padding: 5vh 0;
         }
     }
 }
