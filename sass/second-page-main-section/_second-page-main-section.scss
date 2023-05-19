@@ -1,0 +1,60 @@
+.main-section {
+    height: 100vh;
+    width: 80vw;
+    margin: 0 auto;
+    margin-top: 20vh;
+    &__content {
+        height: 70%;
+        text-align: left;
+        &__header {
+            font-size: $very-big-font-size;
+            height: 30%;
+            h2 {
+                line-height: 6vh;
+            }
+        }
+        &__button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 20%;
+            @media screen and (min-width: map-get($breakepoints, $smartphone)) {
+                height: 15%;
+            }
+            @media (orientation: landscape) and (min-width: map-get($breakepoints, $small-smartphone)) and (max-width: map-get($breakepoints, $tablet)) {
+                height: 20%;
+            }
+            @media (orientation: landscape) and (min-width: map-get($breakepoints, $small-smartphone)) and (max-width: 920px) {
+                height: 20%;
+            }
+        }
+        &__a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            height: 35%;
+            @media screen and (min-width: map-get($breakepoints, $smartphone)) {
+                height: 60%;
+                width: 45%;
+            }
+            @media screen and (min-width: map-get($breakepoints, $large-smartphone)) {
+                width: 25%;
+            }
+            @media screen and (min-width: map-get($breakepoints, $small-desktop)) {
+                width: 15%;
+            }
+            @media (orientation: landscape) and (min-width: map-get($breakepoints, $small-smartphone)) and (max-width: map-get($breakepoints, $tablet)) {
+                height: 100%;
+            }
+        }
+        &__btn {
+            background-color: $btn-bg-color;
+            font-weight: bold;
+            font-size: $small-font-size;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
