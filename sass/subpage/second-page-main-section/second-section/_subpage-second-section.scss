@@ -1,0 +1,71 @@
+.content-section {
+    width: 100vw;
+    height: 170vh;
+    &__image {
+        width: 80%;
+        height: 17%;
+        margin: 0 auto;
+    }
+    &__img {
+        width: 100%;
+        height: 100%;
+    }
+    &__description {
+        height: 45%;
+        padding-top: 6vh;
+        width: 80%;
+        margin: 0 auto;
+        h2 {
+            margin-bottom: 3vh;
+            line-height: 5.5vh;
+            font-size: $very-big-font-size;
+        }
+    }
+    &__tool {
+        height: 20%;
+        width: 70%;
+        margin: 0 6vw;
+        h2 {
+            font-size: $very-big-font-size;
+        }
+        &__skills {
+            margin-top: 5vh;
+            width: 90vw;
+            height: 60%;
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+        &__skill {
+            background-color: rgb(228, 228, 233);
+            height: 30%;
+            width: 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            padding: 0.5rem 4rem;
+        }
+    }
+    &__see-project {
+        height: 12%;
+        margin: 7vh 6vw 0 6vw;
+        &__h2 {
+            font-size: $very-big-font-size;
+        }
+        &__buttons {
+            height: 60%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            a {
+                width: 37%;
+                height: 35%;
+            }
+        }
+        &__btn-see, &__btn-back {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
