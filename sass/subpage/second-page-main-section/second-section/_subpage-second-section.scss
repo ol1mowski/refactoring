@@ -1,6 +1,9 @@
 .content-section {
     width: 100vw;
     height: 170vh;
+    @media (orientation: landscape) and (min-width: map-get($breakepoints, $small-smartphone)) and (max-width: map-get($breakepoints, $tablet)) {
+        height: 280vh;
+    }
     &__image {
         width: 80%;
         height: 17%;
@@ -23,6 +26,10 @@
         }
         @media screen and (min-width: map-get($breakepoints, $desktop)) {
             width: 35%;
+        }
+        @media (orientation: landscape) and (min-width: map-get($breakepoints, $small-smartphone)) and (max-width: map-get($breakepoints, $tablet)) {
+            width: 60%;
+            height: 26%;
         }
     }
     &__img {
@@ -47,10 +54,20 @@
         @media screen and (min-width: map-get($breakepoints, $desktop)) {
             padding-top: 15vh;
         }
+        @media (orientation: landscape) and (min-width: map-get($breakepoints, $small-smartphone)) and (max-width: map-get($breakepoints, $tablet)) {
+            height: 30%;
+            padding-top: 20vh;
+        }
         h2 {
             margin-bottom: 3vh;
             line-height: 5.5vh;
             font-size: $very-big-font-size;
+        }
+        h3 {
+            @media (orientation: landscape) and (min-width: map-get($breakepoints, $small-smartphone)) and (max-width: map-get($breakepoints, $tablet)) {
+                line-height: 7vh;
+                padding-top: 5vh;
+            }
         }
     }
     &__tool {
@@ -91,6 +108,9 @@
             @media screen and (min-width: map-get($breakepoints, $desktop)) {
                 width: 30vw;
             }
+            @media (orientation: landscape) and (min-width: map-get($breakepoints, $small-smartphone)) and (max-width: map-get($breakepoints, $tablet)) {
+                margin-top: 17vh;
+            } 
         }
         &__skill {
             background-color: rgb(228, 228, 233);
@@ -141,6 +161,10 @@
                 }
                 @media screen and (min-width: map-get($breakepoints, $large-desktop)) {
                     width: 10%;
+                }
+                @media (orientation: landscape) and (min-width: map-get($breakepoints, $small-smartphone)) and (max-width: map-get($breakepoints, $tablet)) {
+                    height: 40%;
+                    width: 30%;
                 }
             }
         }
