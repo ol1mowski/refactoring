@@ -12,87 +12,132 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Case of Study Webpage Computer store</title>
-    <link rel="stylesheet" href="../styles/styleCase.css">
+    <link rel="stylesheet" href="../css/style-second.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
 </head>
 
 <body>
 
-    <header id="header">
-        <div id="logoD">
-            <svg id="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-    <path d="M224 0c70.7 0 128 57.3 128 128s-57.3 128-128 128s-128-57.3-128-128S153.3 0 224 0zM209.1 359.2l-18.6-31c-6.4-10.7 1.3-24.2 13.7-24.2H224h19.7c12.4 0 20.1 13.6 13.7 24.2l-18.6 31 33.4 123.9 39.5-161.2c77.2 12 136.3 78.8 136.3 159.4c0 17-13.8 30.7-30.7 30.7H265.1 182.9 30.7C13.8 512 0 498.2 0 481.3c0-80.6 59.1-147.4 136.3-159.4l39.5 161.2 33.4-123.9z"
-    />
-    </svg>
-            <span id="name">Oliwier Markiewicz</span>
+    <header class="header">
+        <div class="header__wrapper-inline">
+            <div class="header__image-box">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"/></svg>
+                <span class="header__image-box__name">Oliwier Markiewicz</span>
+            </div>
+        </div>
+        <div class="hamburger">
+            <div class="hamburger__container__flex">
+                <div class="hamburger__container">
+                    <div class="hamburger__lines"></div>
+                    <div class="hamburger__lines"></div>
+                    <div class="hamburger__lines"></div>
+                </div>
+            </div>
+        </div>
+        <div class="menu">
+            <div class="menu__items">
+                <a href="">
+                    <div class="menu__item">HOME</div>
+                </a>
+                <a href="">
+                    <div class="menu__item">ABOUT</div>
+                </a>
+                <a href="">
+                    <div class="menu__item">PROJECTS</div>
+                </a>
+                <a href="">
+                    <div class="menu__item">CONTACT</div>
+                </a>
+            </div>
         </div>
     </header>
 
-    <main>
-        <section style="margin-bottom: 10vh;" id="contentMain2">
-            <div id="content">
-                <div id="hOne">
-                    <h1 style="font-size: 40px;">My Portfolio</h1>
-                </div>
-                <div id="hThree">
-                    <h3>My project portfolio was fully designed and implemented by me. It contains some of my projects as well as a contact form and links to e.g. github and YouTube channel</h3>
-                </div>
-                <div id="change">
-                    <a href="https://ol1mowski.github.io/Portfolio.ot/" target="_blank"><button id="button1">PROJECT LINK</button></a>
-                </div>
+    <section class="main-section">
+        <div class="main-section__content">
+            <div class="main-section__content__header">
+                <h2 class="main-section__content__header__h2"></h2>
             </div>
-        </section>
+            <div class="main-section__content__main">
+                <h3>Computer store website design is an interactive platform that allows you to get acquainted with the computer store's offer. The page consists of several main elements, including navigation menu, product offer, and contact module.</h3>
+            </div>
+            <div class="main-section__content__button">
+                <a href="https://ol1mowski.github.io/Portfolio.ot/" class="main-section__content__a" target="_blank">
+                    <button class="main-section__content__btn">PROJECT LINK</button>
+                </a>
+            </div>
+        </div>
+    </section>
 
-        <section id="photoDes">
-            <div id="img"><img id="imgD" src="../img/Portfolio.png" alt="Portfolio"></div>
-            <div id="description">
-                <h1 style="font-size: 34px; margin-bottom: 7vh">Project Overview</h1>
-                <p>My project portfolio was fully designed and implemented by me. It contains some of my projects as well as a contact form and links to e.g. github and YouTube channel</p>
+   <section class="content-section">
+        <div class="content-section__image">
+            <img draggable="false" loading="lazy" class="content-section__img" src="../img/Portfolio.png" alt="computer store website">
+        </div>
+        <div class="content-section__description">
+            <h2>Project Overview</h2>
+            <h3>Computer store website design is an interactive platform that allows you to get acquainted with the computer store's offer. The page consists of several main elements, including navigation menu, product offer, and contact module.</h3>
+        </div>
+        <div class="content-section__tool">
+            <h2>Tools Used</h2>
+            <div class="content-section__tool__skills">
+                <div class="content-section__tool__skill">HTML</div>
+                <div class="content-section__tool__skill">CSS</div>
+                <div class="content-section__tool__skill">JavaScript</div>
+                <div class="content-section__tool__skill">GIT</div>
+                <div class="content-section__tool__skill">Github</div>
+                <div class="content-section__tool__skill">RWD</div>
             </div>
-            <div id="tool">
-                <h1 style="font-size: 34px; margin-bottom: 7vh">Tools Used</h1>
-                <div id="skills">
-                    <div class="skill">HTML</div>
-                    <div class="skill">CSS</div>
-                    <div class="skill">JavaScript</div>
-                    <div class="skill">jQuery</div>
-                    <div class="skill">GIT</div>
-                    <div class="skill">Github</div>
-                    <div class="skill">RWD</div>
-                </div>
+        </div>
+        <div class="content-section__see-project">
+            <h2 class="content-section__see-project__h2">See live</h2>
+            <div class="content-section__see-project__buttons">
+                <a href="https://ol1mowski.github.io/Portfolio.ot/" target="_blank">
+                    <button class="content-section__see-project__btn-see">
+                        See
+                    </button>
+                </a>
+                <a href="../index.html">
+                    <button class="content-section__see-project__btn-back">
+                        Go back
+                    </button>
+                </a>
             </div>
-            <div id="see">
-                <h1 style="font-size: 34px; margin-bottom: 3vh">See live</h1>
-                <a href="https://ol1mowski.github.io/Portfolio.ot/" target="_blank"><button id="seeP">See</button></a>
-                <a href="https://ol1mowski.github.io/Portfolio.ot/"><button id="back">Go back</button></a>
-            </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
-    <footer>
-        <div id="footer_main">
-            <div id="nameF">
-                <h3>OLIWIER MARKIEWICZ</h3>
-                <br>
-                <p id="no">A Frontend focused Web Developer building the Frontend of Websites and Web Applications that leads to the success of the overall product</p>
+    <footer class="footer">
+        <div class="footer__wrapper">
+            <div class="footer__contant-wrapper">
+                <div class="footer__author-description">
+                    <h3 class="footer__author-description__header">OLIWIER MARKIEWICZ</h3>
+                    <br>
+                    <p class="footer__author-description__content">A Frontend focused Web Developer building the Frontend of Websites and Web Applications that leads to the success of the overall product</p>
+                </div>
+                <div class="footer__icon-container">
+                    <h3 class="footer__icon-container__title">SOCIAL</h3>
+                    <br>
+                    <div class="footer__icon-container__github">
+                        <a href="https://github.com/ol1mowski?tab=repositories" target="_blank" rel="noopener noreferrer">
+                            <img class="footer-icon__gh" src="../img/icon/github-ico.png" alt="Git Hub icon" draggable="false" loading="lazy">
+                        </a>
+                    </div>
+                    <div class="footer__icon-container__youtube">
+                        <a href="https://www.youtube.com/channel/UCTNFKRALTZoSQS6mDOuDs2Q" target="_blank">
+                            <img class="footer-icon__yt" src="../img/icon/yt-ico.png" alt="You Tube icon" draggable="false" loading="lazy">
+                        </a>
+                    </div>
+                </div>
             </div>
-            <div id="socialF">
-                <h3 style="float: right;">SOCIAL</h3>
-                <br>
-                <br>
-                <div id="git_f">
-                    <a href="https://github.com/ol1mowski?tab=repositories" target="_blank" rel="noopener noreferrer"><img width="100%" height="100%" src="../img/icon/github-ico.png" alt="Git Hub icon"></a>
-                </div>
-                <div id="yt_f">
-                    <a href="https://www.youtube.com/channel/UCTNFKRALTZoSQS6mDOuDs2Q" target="_blank"><img width="100%" height="100%" src="../img/icon/yt-ico.png" alt="You Tube icon"></a>
-                </div>
+            <div class="footer__copyright">
+                <span class="footer__copyright__content">© Copyright 2023. Made by Oliwier Markiewicz</span>
             </div>
         </div>
         </div>
     </footer>
 
-    <script src="../app.js"></script>
+    <script src="../scripts/app-second-pade.js"></script>
+    <script src="../scripts/write animation/portfolio.js"></script>
+    <script src="../scripts/app.js"></script>
 </body>
 
 </html>
