@@ -6,6 +6,9 @@
     @media screen and (min-width: map-get($breakepoints, $large-smartphone)) {
         margin-top: 25vh;
     }
+    @media screen and (min-width: 600px) {
+        height: 75vh;
+    }
     @media screen and (min-width: map-get($breakepoints, $small-desktop)) {
         margin-top: 35vh;
     }
@@ -19,7 +22,7 @@
             text-align: center;
         }
         @media screen and (min-width: 600px) {
-            height: 50%;
+            height: 80%;
         }
         
         &__header {
