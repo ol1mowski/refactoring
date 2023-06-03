@@ -167,9 +167,11 @@
     }
 }
 .skills__skill {
-    border: 1px solid #666;
+    -webkit-box-shadow: 8px 8px 24px -11px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 8px 8px 24px -11px rgba(66, 68, 90, 1);
+    box-shadow: 8px 8px 24px -11px rgba(66, 68, 90, 1);
     cursor: pointer;
-    background-color: #99999940;
+    background-color: #01142b16;
     border-radius: 10px;
     display: flex;
     justify-content: center;

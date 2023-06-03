@@ -65,7 +65,7 @@
         padding: 7vh 5vw;
         height: 70%;
         border-radius: 15px;
-        background-color: #3333;
+        background-color: #01142b1e;
         backdrop-filter: blur(10px);
         @media screen and (min-width: map-get($breakepoints, $large-smartphone)) {
             width: 60%;
@@ -157,6 +157,7 @@
             align-items: center;
         }
         &__btn {
+            background-color: $btn-bg-color;
             width: 40%;
             height: 40%;
         }

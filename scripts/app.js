@@ -105,6 +105,7 @@ animate(AnimateElement8, elementPosition8)
 */
 //delay scroll
 
+// set data in footer
 const now = new Date();
 const footer = document.querySelector('.footer__copyright__content');
 footer.innerText = `© Copyright ${now.getFullYear()}. Made by Oliwier Markiewicz`

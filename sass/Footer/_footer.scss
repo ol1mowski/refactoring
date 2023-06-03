@@ -1,6 +1,11 @@
+
 .footer {
     background-color: #000;
     width: 100vw;
+    * {
+        color: #fff;
+    }
+
     &__wrapper {
         margin: 0 auto;
         width: 90%;
